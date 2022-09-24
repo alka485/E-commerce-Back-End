@@ -21,15 +21,16 @@ const seedAll = async () => {
 
   });
 
+  await Tag.bulkCreate(seedTags,{
+    individualHooks : true,
+       returning: true,
+   });
+
   await ProductTag.bulkCreate(seedProductTags, {
     individualHooks : true,
      returning: true,
   });
 
- await Tag.bulkCreate(seedTags,{
-  individualHooks : true,
-     returning: true,
- });
 
   
   process.exit(0);

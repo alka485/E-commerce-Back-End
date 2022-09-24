@@ -1,11 +1,11 @@
 const router = require('express').Router();
-const { Tag, Product, ProductTag } = require('../../models');
+const { Tag } = require('../../models');
 
 // The `/api/tags` endpoint
 
 router.get('/', (req, res) => {
   // find all tags
-  // be sure to include its associated Product data
+  // be sure to include its associated Tag data
   Tag.findAll().then((tagData) => {
     res.json(tagData);
   });
