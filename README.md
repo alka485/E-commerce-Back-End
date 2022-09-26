@@ -35,7 +35,7 @@ This will run the server where you can find the page on localhost:3005. To end y
 JavaScript
 Node.js
 Express.js
-
+MySql
 ## Links
 
  https://drive.google.com/file/d/19MSLpcuKRBw-ml8Vr3xXTx2ztEa8EQab/view
